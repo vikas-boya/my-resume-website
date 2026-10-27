@@ -167,7 +167,53 @@ const handleContactSubmit = async (
 
         <section id="contact" className="page-section">
           <SectionTitle title="Contact" />
+<form
+  className="contact-form"
+  onSubmit={handleContactSubmit}
+>
+  <label>
+    Your name
+    <input
+      name="name"
+      value={formName}
+      onChange={(e) => setFormName(e.target.value)}
+      placeholder="Enter your name"
+      required
+    />
+  </label>
 
+  <label>
+    Your email
+    <input
+      name="email"
+      type="email"
+      value={formEmail}
+      onChange={(e) => setFormEmail(e.target.value)}
+      placeholder="Enter your email"
+      required
+    />
+  </label>
+
+  <label>
+    Message
+    <textarea
+      name="message"
+      value={formMessage}
+      onChange={(e) => setFormMessage(e.target.value)}
+      placeholder="Write your message..."
+      rows={4}
+      required
+    />
+  </label>
+
+  <button className="primary-button" type="submit">
+    Send message
+  </button>
+
+  <p className="form-note" role="status">
+    {formStatus}
+  </p>
+</form>
          
         </section>
       </section>
