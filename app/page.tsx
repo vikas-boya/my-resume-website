@@ -82,7 +82,7 @@ const handleContactSubmit = async (
         <div className="side-divider" />
         <div className="socials">
           <a href="https://www.linkedin.com/in/vikas-boya-a4831434b/?isSelfProfile=true" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin size={18}/></a>
-          <a href="" target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={18}/></a>
+          <a href="https://github.com/vikas-boya" target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={18}/></a>
 
         </div>
         <a className="publication-link" href="#projects" onClick={() => setActive("Projects")}>Featured Projects</a>
